@@ -17,7 +17,7 @@
                         <div class="auth-box register">
                           <div class="content">
                             <div class="header">
-                              <p class="lead">Créer un compte BITE</p>
+                              <p class="lead">Créer un compte</p>
                             </div>
                             <x-jet-validation-errors class="mb-4 text-danger" />
                             <form class="form-auth-small" method="POST" action="{{ route('employes.store') }}">
