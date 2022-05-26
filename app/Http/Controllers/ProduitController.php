@@ -66,7 +66,7 @@ class ProduitController extends Controller
      */
     public function edit(produit $produit)
     {
-        //
+        return view('produit.eddit', compact('produit'));
     }
 
     /**
@@ -78,7 +78,9 @@ class ProduitController extends Controller
      */
     public function update(Request $request, produit $produit)
     {
-        //
+        $produit->update($request->all());
+        return redirect()->route('produit.index')
+                ->with('success','Produit modifier');
     }
 
     /**
